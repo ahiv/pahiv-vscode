@@ -1,0 +1,25 @@
+{
+    "name": "pahiv-vscode",
+    "displayName": "pahiv-vscode",
+    "description": "Pahiv language support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.38.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "pahiv",
+            "aliases": ["pahiv", "pahiv"],
+            "extensions": [".pahiv"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "pahiv",
+            "scopeName": "source.pahiv",
+            "path": "./syntaxes/pahiv.tmLanguage"
+        }]
+    }
+}
